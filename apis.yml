@@ -1,23 +1,51 @@
 aid: beihaibiotech
+
 name: Beihaibiotech
-description: 'Beihaibiotech is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Beihaibiotech (also known as Beihai Biotech) is a biotechnology and pharmaceutical company founded in 2013 that researches, develops, and produces safe anti‑cancer drugs. The company focuses on innovative therapies in oncology, leveraging advanced biotech platforms to bring new treatments to market. It operates within the software, AI, and data analytics sectors to support drug discovery and development, aiming to improve patient outcomes through cutting‑edge science.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beihaibiotech/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Biotechnology
+- Pharmaceuticals
+- Oncology
+- AI
+- Data Analytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beihaibiotech-hosts.yml
+- type: Vendors
+  url: vendors/beihaibiotech-vendors.yml
+- type: DomainSecurity
+  url: security/beihaibiotech-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/beihaibiotech
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
